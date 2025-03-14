@@ -1,0 +1,17 @@
+[Unit]
+Description=Trail RFID Send times to server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi
+ExecStart=/usr/bin/python3 -u /home/pi/api_transmit.py silent
+ExecStop=/bin/kill -15 $MAINPID
+KillMode=process
+Restart=on-failure
+RestartPreventExitStatus=255
+User=pi
+Group=pi
+
+[Install]
+WantedBy=multi-user.target

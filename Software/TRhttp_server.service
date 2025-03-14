@@ -1,0 +1,15 @@
+[Unit]
+Description=Trail RFID HTTP Server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi
+ExecStart=/usr/bin/python3 -u /home/pi/http_server.py silent
+ExecStop=/bin/kill -15 $MAINPID
+KillMode=process
+Restart=on-failure
+RestartPreventExitStatus=255
+
+[Install]
+WantedBy=multi-user.target
