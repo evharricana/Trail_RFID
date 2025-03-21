@@ -1,7 +1,7 @@
 # Trail_RFID
 A battery-powered high-speed RFID reader controlled by a Raspberry PI 2W for off-grid use
 
-Low-cost RFID-based system providing for better tracking of participants to cross-country running or other events. Ideally suited where significant sections of the track are located in areas outside the reach of cellular networks.
+Low-cost RFID-based system providing for better tracking of participants to trail running, like Ultra-Trail Harricana (UTHC), or other events. Ideally suited where significant sections of the track are located in areas outside the reach of cellular networks.
 
 •	Raspberry PI 2W quad-core single-board computer, executing three concurrent Python scripts,
 on-demand cooling fan to keep components within normal operating temperature range,
